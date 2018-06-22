@@ -1,0 +1,12 @@
+.panel-body a {
+  word-break: break-all;
+}
+
+.articleHeadline {
+  line-height: 1.5;
+}
+
+.jumbotron {
+  background-color: #20315a;
+  color: white;
+}
