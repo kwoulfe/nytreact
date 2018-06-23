@@ -8,7 +8,7 @@ module.exports = {
         res.json(doc);
       })
       .catch(function(err) {
-        res.jason(err);
+        res.json(err);
       });
   },
   insert: function(req, res) {
