@@ -1,12 +1,28 @@
-.panel-body a {
-  word-break: break-all;
+.App {
+  text-align: center;
 }
 
-.articleHeadline {
-  line-height: 1.5;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.jumbotron {
-  background-color: #20315a;
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
