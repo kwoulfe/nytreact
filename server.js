@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 var articlesController = require('./server/controllers/article-controller');
 var router = new express.Router();
-router.get('/api/saved', articledController.find);
+router.get('/api/saved', articlesController.find);
 router.post('/api/saved', articlesController.insert);
 router.delete('/api/saved/:id', articlesController.delete);
 router.get('/*', function(req, res) {

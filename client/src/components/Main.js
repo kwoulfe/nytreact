@@ -80,14 +80,14 @@ class Main extends Component {
   };
 
   handleSaveButton = id => {
-    const findArticleById = this.state.article.find(el => el.id === id);
+    const findArticleById = this.state.articles.find(el => el._id === id);
     console.log('findArticleById: ', findArticleById);
-    const NewSave = {
-      title: findArticleById.headlind.main,
+    const newSave = {
+      title: findArticleById.headline.main,
       date: findArticleById.pub_date,
       url: findArticleById.web_url
     };
-    API.getSavedArticle(newSave).then(this.getSavedArticles());
+    API.saveArticle(newSave).then(this.getSavedArticles());
   };
 
   handleDeleteButton = id => {
