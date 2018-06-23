@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var Schema = mpngoose.Schema;
+var Schema = mongoose.Schema;
 
 var articleSchema = new Schema({
   title: String,
